@@ -1,0 +1,66 @@
+{% extends "registration/base.html" %}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block content %}
+<div>
+    <style>
+        body {
+            background-image: url('https://images.ctfassets.net/o2gysnvd04sg/AuMN3gXMxUGoQMG8uYoes/fa966b29cc9b3d96616606ce6d061584/houses-on-street-in-canada.jpg');
+        }
+    </style><br>
+    <div class="container" style="text-align: center;">
+        <h3>Welcome to Our Neighbourhood</h3>
+       
+    </div><br><br>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 phone-section">
+            </div>
+
+
+
+            <div class="col-md-4 form-section">
+
+                {% if form.errors %}
+                <p>Password or Username is incorrect</p>
+                {% endif %}
+
+                <div class="panel panel-default" style="margin-top:80px;">
+
+                    <div class="panel-body">
+
+                        <div class="text-center">
+                            <form action="/accounts/login/" method="post">
+
+                                {% csrf_token%}
+                                {% bootstrap_form form %}
+
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-primary login-button" value="Log in">
+
+                                </div>
+                                <input type="hidden" name="next" value="/">
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">
+                        <p> Don't have an account? <span><a class="" href="/accounts/register">Sign Up</a></span></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+    </div>
+</div> <br><br>
+<div style="background-color:rgb(21, 23, 24);">
+</div>
+{% endblock %}
