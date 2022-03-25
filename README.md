@@ -1,10 +1,10 @@
 
-# NEIGHBOURHOOD
-
+# Neighbourhood-Watch
+Neighbourhood project is about how people living in an area can get the necessary services easily
 
 ## Author
 
-- Kiprotich Amos Koech
+- Fred Papa
 
 
 ## Description
@@ -12,9 +12,9 @@ Neighbourhood project is about how people living in an area can get the necessar
 
 # Setup Installation
 
-- Clone or download and unzip the repository from github https://github.com/amoskipz/Neighbourhood
+- Clone or download and unzip the repository from github https://github.com/PapaFreddie/Neighbourhood-Watch
 
-- You can use this command (git clone https://github.com/amoskipz/Neighbourhood) to clone the project to your machine if you have git.
+- You can use this command (git clone https://github.com/PapaFreddie/Neighbourhood-Watch) to clone the project to your machine if you have git.
 
 - cd into the project folder and open in text editor either code. or atom.
 
@@ -47,4 +47,4 @@ This project is licensed under the MIT LICENSE
 
 Details If you have any suggestion or modification that can better this project, feel free to contact me. Here are my details:
 
-Kiprotich Amos Koech koechkipz03@gmail.com
+fredpapah20@gmail.com
